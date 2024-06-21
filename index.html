@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Bootstrap css link -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- aos-animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Style Css link -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
@@ -54,7 +56,7 @@
     </div>
   </nav>
   <!-- Start Header Text -->
-  <div class="container text-center text-white">
+  <div class="container text-center text-white z-3"  data-aos="zoom-in">
     <p class="fs-4 fw-semibold mb-5" style="letter-spacing: 15px;">DESIGN COMES TO THOSE WHO WAIT</p>
     <p class="fs-6 mb-5" style="letter-spacing: 5px;">Hello This is Onepage Multipurpose Template.</p>
     <a class="main-btn fw-bold" href="">LEARN MORE</a>
@@ -67,7 +69,7 @@
   <div class="icon-up fw-semibold position-fixed rounded z-3">
     <span>up</span>
   </div>
- <div class="entro-text pt-5 pb-5">
+ <div class="entro-text pt-3 pb-2" data-aos="fade-down">
   <div class="container text-center mt-5 mb-5 pt-5 pb-5">
     <img class="" src="images/mountain.svg" alt="">
     <p class="lh-lg ms-auto me-auto mt-5 fs-6">Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nist tempus convallis quis ac lectus. Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus.</p>
@@ -79,7 +81,7 @@
 <!-- Start Services Section -->
 <section class="services pt-5" id="services">
   <!-- Text Part -->
-  <div class="container text-center mt-5 mb-5 pe-5 ps-5 main-titel">
+  <div class="container text-center mt-5 mb-5 pe-5 ps-5 main-titel" data-aos="fade-down">
     <img class="mb-4" src="images/axes.svg" alt="">
     <h2 class="fs-5 fw-bold mb-4" style="letter-spacing: 15px;">OUR SERVICES</h2>
     <p class="lh-lg title-p">Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec sollicitudin molestie malesuada</p>
@@ -88,28 +90,28 @@
   <div class="cart container pt-5">
     <!-- Cart Part-1 -->
     <div class="row text-center">
-      <div class="col-12 col-lg-3 p-3">
+      <div class="col-12 col-md-6 col-lg-3 p-3">
         <div class="box bg-white ps-3 pe-3 pt-5 shadow">
           <img src="images/printer-icon.svg" alt="">
           <h4 class="m-4 fs-6 fw-semibold">GRAPHIC DESIGN</h4>
           <p class="lh-lg">Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec sollicitudin</p>
         </div>
       </div>
-      <div class="col-12 col-lg-3 p-3">
+      <div class="col-12 col-md-6 col-lg-3 p-3">
         <div class="box bg-white ps-3 pe-3 pt-5 shadow">
           <img src="images/roller-icon.svg" alt="">
           <h4 class="m-4 fs-6 fw-semibold">WEB DESIGN</h4>
           <p class="lh-lg">Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec sollicitudin</p>
         </div>
       </div>
-      <div class="col-12 col-lg-3 p-3">
+      <div class="col-12 col-md-6 col-lg-3 p-3">
         <div class="box bg-white ps-3 pe-3 pt-5 shadow">
           <img src="images/monitor-icon.svg" alt="">
           <h4 class="m-4 fs-6 fw-semibold">WEB DEVELOPMENT</h4>
           <p class="lh-lg">Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec sollicitudin</p>
         </div>
       </div>
-      <div class="col-12 col-lg-3 p-3">
+      <div class="col-12 col-md-6 col-lg-3 p-3">
         <div class="box bg-white ps-3 pe-3 pt-5 shadow">
           <img src="images/phone-icon.svg" alt="">
           <h4 class="m-4 fs-6 fw-semibold">APP DEVELOPMENT</h4>
@@ -119,7 +121,7 @@
     </div>
     <!-- Cart Part-2 -->
     <div class="row" id="progBox">
-      <div class="col-12 col-lg-3 p-3">
+      <div class="col-12 col-md-6 col-lg-3 p-3">
         <div class="progs bg-white ps-2 pe-2 pt-4 pb-4 shadow">
           <div class="prog mb-3">
             <h5 class="fw-bold mp-3" style="font-size: 13px;">Ps</h5>
@@ -141,7 +143,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-lg-3 p-3">
+      <div class="col-12 col-md-6 col-lg-3 p-3">
         <div class="progs bg-white ps-2 pe-2 pt-4 pb-4 shadow">
           <div class="prog mb-3">
             <h5 class="fw-bold mp-3" style="font-size: 13px;">Ui</h5>
@@ -163,7 +165,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-lg-3 p-3">
+      <div class="col-12 col-md-6 col-lg-3 p-3">
         <div class="progs bg-white ps-2 pe-2 pt-4 pb-4 shadow">
           <div class="prog mb-3">
             <h5 class="fw-bold mp-3" style="font-size: 13px;">Html</h5>
@@ -185,7 +187,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-lg-3 p-3">
+      <div class="col-12 col-md-6 col-lg-3 p-3">
         <div class="progs bg-white ps-2 pe-2 pt-4 pb-4 shadow">
           <div class="prog mb-3">
             <h5 class="fw-bold mp-3" style="font-size: 13px;">C++</h5>
@@ -213,25 +215,25 @@
    <div class="counter" id="coungBox" style="background-color: var(--main-color); padding: 70px 0;">
     <div class="container">
       <div class="row count">
-        <div class="col-12 col-lg-3 p-3">
+        <div class="col-12 col-md-6 col-lg-3 p-3">
           <div class="cont text-center" style="background-color: #fbfbfb; padding: 10px 0;">
             <h5 class="fs-5 fw-bold mt-1" data-gold="694">0</h5>
             <p class="fw-semibold m-0"  style="color: #757575; font-size: 14px;">COMPLETED DESIGNS</p>
           </div>
         </div>
-        <div class="col-12 col-lg-3 p-3">
+        <div class="col-12 col-md-6 col-lg-3 p-3">
           <div class="cont text-center" style="background-color: #fbfbfb; padding: 10px 0;">
             <h5 class="fs-5 fw-bold mt-1" data-gold="324">0</h5>
             <p class="fw-semibold m-0"  style="color: #757575;font-size: 14px;">PAGES CREATED</p>
           </div>
         </div>
-        <div class="col-12 col-lg-3 p-3">
+        <div class="col-12 col-md-6 col-lg-3 p-3">
           <div class="cont text-center" style="background-color: #fbfbfb; padding: 10px 0;">
             <h5 class="fs-5 fw-bold mt-1" data-gold="134">0</h5>
             <p class="fw-semibold m-0"  style="color: #757575;font-size: 14px;">PAGES CODED</p>
           </div>
         </div>
-        <div class="col-12 col-lg-3 p-3">
+        <div class="col-12 col-md-6 col-lg-3 p-3">
           <div class="cont text-center" style="background-color: #fbfbfb; padding: 10px 0;">
             <h5 class="fs-5 fw-bold mt-1" data-gold="27">0</h5>
             <p class="fw-semibold m-0"  style="color: #757575;font-size: 14px;">APPS FINISHED</p>
@@ -246,7 +248,7 @@
 <!-- Start Portfolio Section -->
 <section class="portfolio pt-5" id="portfolio">
    <!-- Text Part -->
-   <div class="container text-center mt-5 mb-5 pe-5 ps-5 main-titel">
+   <div class="container text-center mt-5 mb-5 pe-5 ps-5 main-titel" data-aos="fade-down">
     <img class="mb-4" src="images/axes.svg" alt="">
     <h2 class="fs-5 fw-bold mb-4" style="letter-spacing: 15px;">OUR PORTFOLIO</h2>
     <p class="lh-lg title-p">Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec sollicitudin molestie malesuada</p>
@@ -361,9 +363,9 @@
  </div>
 
    <!-- Video -->
- <div class="video-lay position-relative pb-0">
-  <video width="100%"  height="300px" autoplay muted loop>
-    <source src="images/video.mp4">
+ <div class="video-lay position-relative pb-0 text-center">
+  <video  autoplay muted loop>
+    <source src="images/Video.mp4" type="">
   </video>
   <div class="c-btn  position-absolute">
     <a class="v-btn fw-semibold" href="">VIEW OUR VIDEO</a>
@@ -376,7 +378,7 @@
 <!-- Start Team Section -->
 <section class="team pt-5 pb-5" id="about">
   <!-- Team Texte -->
-  <div class="container text-center mt-5 mb-5 pe-5 ps-5 main-titel">
+  <div class="container text-center mt-5 mb-5 pe-5 ps-5 main-titel" data-aos="fade-down">
     <img class="mb-4" src="images/axes.svg" alt="">
     <h2 class="fs-5 fw-bold mb-4" style="letter-spacing: 15px;">OUR TEAM</h2>
     <p class="lh-lg title-p">Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec sollicitudin molestie malesuada</p>
@@ -463,7 +465,7 @@
 <!-- End Team Section -->
 
 <!-- Start Footer Section -->
-<footer id="contact">
+<footer id="contact" data-aos="fade-down">
   <div class="container">
     <div class="row text-center text-lg-start">
       <div class="col-12 col-lg-4">
@@ -513,6 +515,15 @@
  
 <!-- Bootstrap js Link -->
 <script src="js/bootstrap.min.js"></script>
+<!-- aos-animation -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1500,
+    offset: 100,
+    easing: "linear",
+  });
+</script>
 <!-- main Js Link -->
 <script src="js/main.js"></script>
 </body>
