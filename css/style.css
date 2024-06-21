@@ -1,9 +1,9 @@
-/* Start Global Rouls */
+ /* Start Global Rouls */
 :root{
     --main-color: #1B1B1B;
     --seconde-color: #FFE600;
     --p-text-color: #707070;
-    --main-transition: 0.3s;
+    --main-transition: ease .9s;
 }
 body{
     font-family: 'Raleway', sans-serif;
@@ -26,14 +26,37 @@ body{
         padding: 5px;
     }
 }
+.main-btn{
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: var(--main-color);
+    background-color: var(--seconde-color);
+    border: 1px solid var(--seconde-color);
+    transition: var(--main-transition); 
+}
+.main-btn:hover{
+    background-color: transparent;
+    color: white;
+}
 /* End Global Rouls */
 
 /* Start Header */
 header{
+    position: relative;
     height: 100vh;
-    background-image: url(../images/hero.png);
+    background-image: url(../images/hero.jpg);
     background-position: center;
     background-size: cover;
+}
+header::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--main-color);
+    opacity: .3;
 }
 header .my-toggler-icon{
     display: flex;
@@ -60,15 +83,6 @@ header .offcanvas-body a:hover{
 header .main-btn{
     font-size: 10px;
     padding: 18px 40px;
-    letter-spacing: 2px;
-    text-decoration: none;
-    color: var(--main-color);
-    background-color: var(--seconde-color);
-    border: 1px solid var(--seconde-color);
-}
-header .main-btn:hover{
-    background-color: transparent;
-    color: white;
 }
 /* End Header */
 
@@ -112,11 +126,6 @@ header .main-btn:hover{
 }
 .services .box{
     height: 350px;
-}
-@media only screen and (max-width: 991px) {
-    .services .box{
-        padding: 50px 110px !important;
-    }
 }
 @media only screen and (max-width: 420px) {
     .services .box{
@@ -181,6 +190,7 @@ header .main-btn:hover{
 }
 .portfolio .text-hiding{
     opacity: 0;
+    transition: var(--main-transition);
 }
 .portfolio .text-hiding:hover{
     opacity: 1;
@@ -231,14 +241,10 @@ header .main-btn:hover{
 .portfolio .main-btn{
     font-size: 12px;
     padding: 20px 40px;
-    letter-spacing: 2px;
-    text-decoration: none;
-    color: var(--main-color);
-    background-color: var(--seconde-color);
-    border: 1px solid var(--seconde-color);
 }
 .portfolio .main-btn:hover{
     background-color: transparent;
+    color: var(--main-color);
 }
 .portfolio .video-lay::after{
     content: "";
@@ -263,6 +269,7 @@ header .main-btn:hover{
     color: var(--seconde-color);
     background-color: transparent;
     border: 1px solid var(--seconde-color);
+    transition: var(--main-transition);
 }
 .portfolio .v-btn:hover{
     background-color: var(--seconde-color);
@@ -284,9 +291,11 @@ header .main-btn:hover{
     cursor: pointer;
     z-index: 99;
     background-color: var(--seconde-color);
+    transition: var(--main-transition);
 }
 .team .team-box img{
-    opacity: .9;
+    opacity: .8;
+    transition: var(--main-transition);
 }
 .team .team-img:hover img{
     opacity: 1;
@@ -351,11 +360,6 @@ footer ul li{
 footer .main-btn{
     font-size: 14px;
     padding: 15px 100px;
-    letter-spacing: 2px;
-    text-decoration: none;
-    color: var(--main-color);
-    background-color: var(--seconde-color);
-    border: 1px solid var(--seconde-color);
 }
 @media only screen and (max-width: 420px) {
     footer{
@@ -372,7 +376,6 @@ footer .main-btn{
     }
 }
 footer .main-btn:hover{
-    background-color: transparent;
     color: white;
 }
 /* Start Footer */
